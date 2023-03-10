@@ -1,0 +1,20 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each valores.almuerzos}}
+            <div class="col-4 m-1">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3 class="card-title text-uppercase">
+                        {{nombre}} 
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="m-2">$ {{precio}}</p>
+                        <a href="/menu/delete/{{id}}" class="btn btn-danger btn-sm">Borrar</a>
+                        <a href="/menu/editar/{{id}}" class="btn btn-secondary btn-sm">Editar</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
